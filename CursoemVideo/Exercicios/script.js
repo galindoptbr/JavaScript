@@ -1,8 +1,9 @@
 function carregar() {
-    var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('imagem')
-    var data = new Date()
-    var hora = data.getHours()
+    let msg = window.document.getElementById('msg')
+    let img = window.document.getElementById('imagem')
+    let data = new Date()
+    let hora = data.getHours()
+    
     
     if (hora >= 0 && hora < 12) {
         // BOM DIA!
