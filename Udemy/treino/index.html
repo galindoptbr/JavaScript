@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Javascript</title>
+    <style>
+        .tela {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cccccc;
+            padding: 30px;
+        }
+
+        .tela__resultado {
+            background-color: green;
+            color: white;
+            width: 100px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tela__botao {
+            background-color: black;
+            padding: 8px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tela">
+    <button id="botao-mais" class="tela__botao">+ 1</button>
+    <div id="resultado" class="tela__resultado"><!--   Este valor é dinâmico e vai ser adicionado/alterado via javascript  --></div>
+    <button id="botao-menos" class="tela__botao">- 1</button>
+    </div>
+</body>
+
+<!-- JAVASCRIPT -->
+<script>
+    const botaoMais = document.getElementById("botao-mais");
+    const botaoMenos = document.getElementById("botao-menos");
+    const divResultado = document.getElementById('resultado');
+
+    // Seta o valor inicial na tela como zero;
+    divResultado.innerText = 0;
+
+    // Função que adiciona +1 ao resultado atual;
+    botaoMais.addEventListener("click", function() {
+        const resultadoAtual = divResultado.innerText;
+        divResultado.innerText = parseInt(resultadoAtual) + 1;
+    });
+
+    // Função que subtrai -1 ao resultado atual;
+    botaoMenos.addEventListener("click", function() {
+        const resultadoAtual = divResultado.innerText;
+        divResultado.innerText = parseInt(resultadoAtual) - 1;
+    });
+</script>
+<!-- / JAVASCRIPT -->
+
+</html>
