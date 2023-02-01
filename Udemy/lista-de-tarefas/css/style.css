@@ -10,6 +10,8 @@
 body {
     background: #412070;
     font-family: 'Roboto Condensed', sans-serif;
+    width: 100vw;
+    height: 100vh;
     
 }
 
@@ -53,7 +55,6 @@ body {
     background-color: #26b345;
     color: white;
     border-radius: 3px;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.411);
 }
 
 .pausado {
