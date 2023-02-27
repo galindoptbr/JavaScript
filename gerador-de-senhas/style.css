@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: rgb(24, 23, 23);
+}
+
+
+.octane {
+    padding: 40px;
+    height: 600px;
+    order: 1;
+    margin-left: -200px;
+    
+}
+
+.box-1 {
+    order: 2;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    width: 500px;
+    margin-bottom: 24px;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20vh;
+    max-width: 480px;
+    
+}
+
+.container-input span {
+    color: white;
+    font-size: 22px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+
+}
+
+.button-cta{
+    height: 40px;
+    background-color: #06ADBF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.container-password {
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.title{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 24px;
+    
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 5px;
+    margin-top: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3131316c;
+    transition: transform 0.5s;
+
+}
+
+.password:hover{
+    transform: scale(1.05);
+
+
+}
+.tooltip{
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    background: rgba(15, 15, 15, 0);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    visibility: hidden;
+}
+
+.hide{
+    display: none;
+}
+
+.container-password:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+
+}
