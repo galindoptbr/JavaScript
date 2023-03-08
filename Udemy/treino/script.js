@@ -1,38 +1,36 @@
-function soma(a, b) {
-    let resultado = a + b;
-    console.log(resultado);
+function addElement() {
+    // Cria o paragrafo
+    let newElement = document.createElement('p');
+    // Cria o texto
+    let text = document.createTextNode('Este e um novo elemento');
+    // Adiciona o texto como filho ao paragrafo
+    newElement.appendChild(text);
+    // Adiciona o paragrafo como filho ao body
+    document.body.appendChild(newElement);
 }
 
-soma(9, 3);
+// Chama a funcao
+addElement()
 
-function quadrado(num) {
-    let quad = num * num;
-    console.log(quad);
+function addClass(elementId, classDoTitulo) {
+    let element = document.getElementById(elementId);
+    element.classList.add(classDoTitulo);
 }
 
-quadrado(3);
+addClass('elementId', 'classDoTitulo');
 
-function fatorial(num) {
-    if (num === 0 || num === 1) {
-        return 1;
-        
-    } else {
-        return num * fatorial(num - 1);
-        
+function changeBackgroundColor() {
+    let fundo = document.querySelector('body');
+
+    if (fundo.style.backgroundColor === 'orange') {
+        fundo.style.backgroundColor = 'white';
+    } else if (fundo.style.backgroundColor = 'orange') {
+
     }
 }
 
-console.log(fatorial(5));
+function mudarTexto() {
+    let botao = document.querySelector('#botaoMudarTexto');
 
-function par(num) {
-    if (num % 2 === 0) {
-        return 'PAR';
-    } else {
-        return 'IMPAR';
-    }
+    botao.innerText = 'VOCE CLICOU E O TEXTO MUDOU';
 }
-
-console.log(par(26));
-
-
-
