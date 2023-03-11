@@ -1,3 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+body {
+    background-color: #262626;
+}
+
+
 .classDoTitulo {
     font-size: 5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #044BD9;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    font-size: 1em;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.438);
+    cursor: pointer;
+}
+
+li {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5em;
+    color: white;
+
+}
+
+label {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    color: white;
+}
+
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    color: white;
 }
